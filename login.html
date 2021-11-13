@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public\styles.css" />
+    <title>Student Login</title>
+  </head>
+  <body class="b">
+    <div class="container1">
+    <img class="img" src="public/Images/white.png" alt="logo">
+    <h1>Innerve Institute of Technology</h1>
+      <h2 style="text-align:center;">Student Login</h2><bR><br>
+      <form>
+        
+        <div class="form-control">
+          <input
+            class="enrollmentNumber"
+            id="enrollmentNumber"
+            type="text"
+            value=""
+            onkeyup="this.setAttribute('value', this.value);"
+          />
+          <label for="email">Enrollment Number</label>
+        </div>
+
+        <!--Email Address-->
+        <div class="form-control">
+          <input
+            class="email"
+            id="email"
+            type="email"
+            value=""
+            onkeyup="this.setAttribute('value', this.value);"
+          />
+          <label for="email">Email</label>
+        </div>
+
+        <!--Password-->
+        <div class="form-control">
+          <input
+            id="password"
+            type="password"
+            value=""
+            onkeyup="this.setAttribute('value', this.value);"
+          />
+          <label for="password">Password</label>
+        </div>
+
+        <button type="submit" class="text btn">Login</button>
+        <p style="text-align:center" class="text">Forgot Password?<a href="#">Click here</a></p>
+      </form>
+    </div>
+    <script src="public/script.js"></script>
+  </body>
+</html>
